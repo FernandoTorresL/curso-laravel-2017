@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateMessageRequest;
 use App\Message;
 use Illuminate\Http\Request;
 
@@ -15,18 +16,19 @@ class MessagesController extends Controller
         ]);
     }
 
-    public function create(Request $request)
+    public function create(CreateMessageRequest $request)
     {
-        $this->validate($request, [
-//            'message' => 'required'
-            'message' => ['required', 'max:160']
-        ], [
-            'message.required' => 'Por favor escribe tu mensaje.',
-            'message.max' => 'El mensaje no puede superar los 160 caracteres.'
+
+//        dd($request->all());
+
+        $message = Message::create([
+            'content' => $request->input('message'),
+            'image' => 'http://lorempixel.com/600/338?' . mt_rand(0,1000)
         ]);
 
-        //        dd($request->all());
-        
-        return 'Llegó!';
+//        dd($message);
+
+        return redirect('/messages/'.$message->id);
     }
+
 }
