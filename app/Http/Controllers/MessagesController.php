@@ -23,7 +23,7 @@ class MessagesController extends Controller
 
         $message = Message::create([
             'content' => $request->input('message'),
-            'image' => 'http://lorempixel.com/600/338?' . mt_rand(0,1000)
+            'image' => 'http://placeimg.com/600/338/tech?' . mt_rand(0,1000)
         ]);
 
 //        dd($message);
