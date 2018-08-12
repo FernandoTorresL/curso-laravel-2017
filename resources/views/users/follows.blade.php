@@ -1,14 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Seguidos por {{ $user->name }}</h1>
+    <h1>{{ $user->name }}</h1>
 
     <div class="row">
-    @foreach($user->follows as $follow)
-        <div class="col-6">
-            <li>{{ $follow->username }}</li>
-        </div>
-    @endforeach
+        <ul class="list-unstyled">
+        @foreach($follows as $follow)
+            <div class="col-6">
+                <li>{{ $follow->username }}</li>
+            </div>
+        @endforeach
+        </ul>
     </div>
 
 @endsection
