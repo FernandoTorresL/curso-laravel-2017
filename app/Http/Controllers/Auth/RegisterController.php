@@ -69,7 +69,7 @@ class RegisterController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'avatar' => 'https://lorempixel.com/300/3000/people?' . random_int(1,1000)
+            'avatar' => $data['avatar'],
         ]);
     }
 }
