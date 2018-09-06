@@ -9,9 +9,7 @@ class PagesController extends Controller
 {
     public function home()
     {
-        $messages = Message::latest()->paginate(10);
-
-//        dd($messages);
+        $messages = Message::with('user')->latest()->paginate(10);
 
         return view('welcome', [
             'messages' => $messages,
