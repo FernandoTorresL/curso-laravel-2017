@@ -13,7 +13,7 @@
     </div>
 
     <div class="row">
-        <form action="/messages/create" method="POST">
+        <form action="/messages/create" method="POST" enctype="multipart/form-data">
             {{--With Boostrap 4, "has-danger" and "form-control-feedback" doesnt work anymore--}}
             <div class="form-group">
                 {{ csrf_field() }}
@@ -24,6 +24,7 @@
                         <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
                 @endif
+                <input type="file" class="form-control-file" name="image">
             </div>
         </form>
     </div>
