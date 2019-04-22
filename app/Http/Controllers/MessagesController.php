@@ -34,6 +34,7 @@ class MessagesController extends Controller
     {
         $query = $request->input('query');
 
+        //Using Laravel Scout and Algolia to search
         $messages = Message::search($query)->get();
 
         $messages->load('user');
