@@ -25,6 +25,7 @@ class Message extends Model
         return \Storage::disk('public')->url($image);
     }
 
+    //Adding method to add user field on the query
     public function toSearchableArray()
     {
         $this->load('user');
