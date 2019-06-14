@@ -8,7 +8,7 @@
                     {{ response.message }}
                 </div>
                 <div class="card-footer text-muted">
-                    {{ response.created_at }}
+                    {{ response.created_at }} - ({{ response.user.name}})
                 </div>
             </div>
         </div>

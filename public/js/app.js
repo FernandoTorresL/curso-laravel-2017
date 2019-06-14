@@ -49238,7 +49238,9 @@ var render = function() {
               _vm._v(
                 "\n                " +
                   _vm._s(response.created_at) +
-                  "\n            "
+                  " - (" +
+                  _vm._s(response.user.name) +
+                  ")\n            "
               )
             ])
           ])
