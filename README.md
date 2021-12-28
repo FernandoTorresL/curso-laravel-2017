@@ -1,4 +1,5 @@
-# Curso de PHP con Laravel, v2017
+# [Curso de PHP con Laravel, Platzi, v2017](https://platzi.com/clases/curso-php-laravel-2017/)
+## [Platzi](https://platzi.com/)
 
 <a href="https://github.com/FernandoTorresL/curso-laravel-2017/commits/main" target="_blank">![GitHub last commit](https://img.shields.io/github/last-commit/FernandoTorresL/curso-laravel-2017)</a>
 
@@ -13,7 +14,7 @@ This [course](https://platzi.com/clases/curso-php-laravel-2017/) has been update
 [Intro to Laravel 8 Course, 2020](https://platzi.com/cursos/intro-laravel)
 
 
-### [Curso de PHP con Laravel 2017](https://platzi.com/clases/curso-php-laravel-2017/)
+### [Curso de PHP con Laravel 2017, Platzi](https://platzi.com/clases/curso-php-laravel-2017/)
 In this course we learn:
 
 - Laravel intro and installation
