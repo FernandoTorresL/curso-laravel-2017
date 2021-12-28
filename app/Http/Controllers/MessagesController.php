@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateMessageRequest;
 use App\Message;
+use App\Response;
 use Illuminate\Http\Request;
 
 class MessagesController extends Controller
@@ -46,7 +47,9 @@ class MessagesController extends Controller
 
     public function responses(Message $message)
     {
-        return $message->responses;
+        //dd($message->responses->with('user')->latest());
+        return $message->responses->load('user');
+        //return $this->hasMany(Response::class)->with('user')->latest();
     }
 
 }
