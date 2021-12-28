@@ -1,8 +1,8 @@
 # Curso de PHP con Laravel, v2017
 
-<a href="https://github.com/FernandoTorresL/Curso-Laravel/commits/main" target="_blank">![GitHub last commit](https://img.shields.io/github/last-commit/FernandoTorresL/Curso-Laravel)</a>
+<a href="https://github.com/FernandoTorresL/curso-laravel-2017/commits/main" target="_blank">![GitHub last commit](https://img.shields.io/github/last-commit/FernandoTorresL/curso-laravel-2017)</a>
 
-<a href="https://github.com/FernandoTorresL/Curso-Laravel" target="_blank">![GitHub repo size](https://img.shields.io/github/repo-size/FernandoTorresL/Curso-Laravel)</a>
+<a href="https://github.com/FernandoTorresL/curso-laravel-2017" target="_blank">![GitHub repo size](https://img.shields.io/github/repo-size/FernandoTorresL/curso-laravel-2017)</a>
 
 ---
 
@@ -42,7 +42,7 @@ WIP
 You can use and change *_<my_folder>_* on this instruction to create a new folder
 
 ```cmd
-git clone git@github.com:FernandoTorresL/Curso-Laravel.git <my_folder>
+git clone git@github.com:FernandoTorresL/curso-laravel-2017.git <my_folder>
 ```
 
 #### Change to working directory
